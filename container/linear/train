@@ -8,16 +8,13 @@ from __future__ import print_function
 
 import os
 import json
-import pickle
 import sys
 import traceback
-from joblib import dump, load
-
+from joblib import dump
 import pandas as pd
-from sklearn import tree
+from sklearn import tree, linear_model
 
 # These are the paths to where SageMaker mounts interesting things in your container.
-
 prefix = "/opt/ml/"
 
 input_path = prefix + "input/data"
@@ -29,6 +26,7 @@ param_path = os.path.join(prefix, "input/config/hyperparameters.json")
 # File mode, the input files are copied to the directory specified here.
 channel_name = "training"
 training_path = os.path.join(input_path, channel_name)
+
 
 # The function to execute the training.
 def train():
@@ -54,26 +52,23 @@ def train():
         raw_data = [pd.read_csv(file, header=None) for file in input_files]
         train_data = pd.concat(raw_data)
 
-        # labels are in the first column
-        train_y = train_data.ix[:, 0]
-        train_X = train_data.ix[:, 1:]
-
         # Here we only support a single hyperparameter. Note that hyperparameters are always passed in as
         # strings, so we need to do any necessary conversions.
-        max_leaf_nodes = trainingParams.get("max_leaf_nodes", None)
-        if max_leaf_nodes is not None:
-            max_leaf_nodes = int(max_leaf_nodes)
+        n_iter = trainingParams.get("n_iter", None)
+        #if n_iter is not None:
+        #    n_iter = int(n_iter)
 
-        # Now use scikit-learn's decision tree classifier to train the model.
-        clf = tree.DecisionTreeClassifier(max_leaf_nodes=max_leaf_nodes)
-        clf = clf.fit(train_X, train_y)
-
-        # save the model
-        #with open(os.path.join(model_path, "decision-tree-model.pkl"), "wt") as out:
-        #    pickle.dump(clf, out)
-        #print("Training complete.")
-        model_file_path = os.path.join(model_path, "decision-tree-model.joblib")
-        dump(clf, model_file_path)
+        g = train_data.groupby(by=train_data.columns[0])
+        for model_name, tmp_df in g:
+            try:
+                train_y = tmp_df.iloc[:, 1]
+                train_X = tmp_df.iloc[:, 2:]
+                reg = linear_model.BayesianRidge(n_iter=100, normalize=True)
+                reg_model = reg.fit(train_X, train_y)
+                model_file_path = os.path.join(model_path, "regression_{}.joblib".format(model_name))
+                dump(reg_model, model_file_path)
+            except Exception as me:
+                print(model_name, me)
 
     except Exception as e:
         # Write out an error file. This will be returned as the failureReason in the

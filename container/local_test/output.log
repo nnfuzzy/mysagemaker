@@ -1,5 +1,147 @@
-Starting the inference server with 8 workers.
-Invoked with 29 records
-172.17.0.1 - - [26/Jan/2019:19:09:25 +0000] "POST /invocations HTTP/1.1" 200 295 "-" "curl/7.63.0"
-Invoked with 1 records
-172.17.0.1 - - [26/Jan/2019:19:42:53 +0000] "POST /invocations HTTP/1.1" 200 7 "-" "curl/7.63.0"
+Starting the inference server with 4 workers.
+A,327,71
+B,100,20
+Invoked with 2 records
+models:{'A': BayesianRidge(alpha_1=1e-06, alpha_2=1e-06, compute_score=False, copy_X=True,
+       fit_intercept=True, lambda_1=1e-06, lambda_2=1e-06, n_iter=100,
+       normalize=True, tol=0.001, verbose=False), 'I': BayesianRidge(alpha_1=1e-06, alpha_2=1e-06, compute_score=False, copy_X=True,
+       fit_intercept=True, lambda_1=1e-06, lambda_2=1e-06, n_iter=100,
+       normalize=True, tol=0.001, verbose=False), 'F': BayesianRidge(alpha_1=1e-06, alpha_2=1e-06, compute_score=False, copy_X=True,
+       fit_intercept=True, lambda_1=1e-06, lambda_2=1e-06, n_iter=100,
+       normalize=True, tol=0.001, verbose=False), 'E': BayesianRidge(alpha_1=1e-06, alpha_2=1e-06, compute_score=False, copy_X=True,
+       fit_intercept=True, lambda_1=1e-06, lambda_2=1e-06, n_iter=100,
+       normalize=True, tol=0.001, verbose=False), 'G': BayesianRidge(alpha_1=1e-06, alpha_2=1e-06, compute_score=False, copy_X=True,
+       fit_intercept=True, lambda_1=1e-06, lambda_2=1e-06, n_iter=100,
+       normalize=True, tol=0.001, verbose=False), 'C': BayesianRidge(alpha_1=1e-06, alpha_2=1e-06, compute_score=False, copy_X=True,
+       fit_intercept=True, lambda_1=1e-06, lambda_2=1e-06, n_iter=100,
+       normalize=True, tol=0.001, verbose=False), 'J': BayesianRidge(alpha_1=1e-06, alpha_2=1e-06, compute_score=False, copy_X=True,
+       fit_intercept=True, lambda_1=1e-06, lambda_2=1e-06, n_iter=100,
+       normalize=True, tol=0.001, verbose=False), 'B': BayesianRidge(alpha_1=1e-06, alpha_2=1e-06, compute_score=False, copy_X=True,
+       fit_intercept=True, lambda_1=1e-06, lambda_2=1e-06, n_iter=100,
+       normalize=True, tol=0.001, verbose=False), 'H': BayesianRidge(alpha_1=1e-06, alpha_2=1e-06, compute_score=False, copy_X=True,
+       fit_intercept=True, lambda_1=1e-06, lambda_2=1e-06, n_iter=100,
+       normalize=True, tol=0.001, verbose=False), 'D': BayesianRidge(alpha_1=1e-06, alpha_2=1e-06, compute_score=False, copy_X=True,
+       fit_intercept=True, lambda_1=1e-06, lambda_2=1e-06, n_iter=100,
+       normalize=True, tol=0.001, verbose=False)}
+A 239
+B 239
+172.17.0.1 - - [27/Jan/2019:18:26:40 +0000] "POST /invocations HTTP/1.1" 200 8 "-" "curl/7.63.0"
+A,327,71
+B,100,20
+C,0,1000
+Invoked with 3 records
+models:{'A': BayesianRidge(alpha_1=1e-06, alpha_2=1e-06, compute_score=False, copy_X=True,
+       fit_intercept=True, lambda_1=1e-06, lambda_2=1e-06, n_iter=100,
+       normalize=True, tol=0.001, verbose=False), 'I': BayesianRidge(alpha_1=1e-06, alpha_2=1e-06, compute_score=False, copy_X=True,
+       fit_intercept=True, lambda_1=1e-06, lambda_2=1e-06, n_iter=100,
+       normalize=True, tol=0.001, verbose=False), 'F': BayesianRidge(alpha_1=1e-06, alpha_2=1e-06, compute_score=False, copy_X=True,
+       fit_intercept=True, lambda_1=1e-06, lambda_2=1e-06, n_iter=100,
+       normalize=True, tol=0.001, verbose=False), 'E': BayesianRidge(alpha_1=1e-06, alpha_2=1e-06, compute_score=False, copy_X=True,
+       fit_intercept=True, lambda_1=1e-06, lambda_2=1e-06, n_iter=100,
+       normalize=True, tol=0.001, verbose=False), 'G': BayesianRidge(alpha_1=1e-06, alpha_2=1e-06, compute_score=False, copy_X=True,
+       fit_intercept=True, lambda_1=1e-06, lambda_2=1e-06, n_iter=100,
+       normalize=True, tol=0.001, verbose=False), 'C': BayesianRidge(alpha_1=1e-06, alpha_2=1e-06, compute_score=False, copy_X=True,
+       fit_intercept=True, lambda_1=1e-06, lambda_2=1e-06, n_iter=100,
+       normalize=True, tol=0.001, verbose=False), 'J': BayesianRidge(alpha_1=1e-06, alpha_2=1e-06, compute_score=False, copy_X=True,
+       fit_intercept=True, lambda_1=1e-06, lambda_2=1e-06, n_iter=100,
+       normalize=True, tol=0.001, verbose=False), 'B': BayesianRidge(alpha_1=1e-06, alpha_2=1e-06, compute_score=False, copy_X=True,
+       fit_intercept=True, lambda_1=1e-06, lambda_2=1e-06, n_iter=100,
+       normalize=True, tol=0.001, verbose=False), 'H': BayesianRidge(alpha_1=1e-06, alpha_2=1e-06, compute_score=False, copy_X=True,
+       fit_intercept=True, lambda_1=1e-06, lambda_2=1e-06, n_iter=100,
+       normalize=True, tol=0.001, verbose=False), 'D': BayesianRidge(alpha_1=1e-06, alpha_2=1e-06, compute_score=False, copy_X=True,
+       fit_intercept=True, lambda_1=1e-06, lambda_2=1e-06, n_iter=100,
+       normalize=True, tol=0.001, verbose=False)}
+A 239
+B 239
+C 245
+172.17.0.1 - - [27/Jan/2019:18:27:07 +0000] "POST /invocations HTTP/1.1" 200 12 "-" "curl/7.63.0"
+A,327,71
+B,100,20
+C,0,1000
+Invoked with 3 records
+models:{'A': BayesianRidge(alpha_1=1e-06, alpha_2=1e-06, compute_score=False, copy_X=True,
+       fit_intercept=True, lambda_1=1e-06, lambda_2=1e-06, n_iter=100,
+       normalize=True, tol=0.001, verbose=False), 'I': BayesianRidge(alpha_1=1e-06, alpha_2=1e-06, compute_score=False, copy_X=True,
+       fit_intercept=True, lambda_1=1e-06, lambda_2=1e-06, n_iter=100,
+       normalize=True, tol=0.001, verbose=False), 'F': BayesianRidge(alpha_1=1e-06, alpha_2=1e-06, compute_score=False, copy_X=True,
+       fit_intercept=True, lambda_1=1e-06, lambda_2=1e-06, n_iter=100,
+       normalize=True, tol=0.001, verbose=False), 'E': BayesianRidge(alpha_1=1e-06, alpha_2=1e-06, compute_score=False, copy_X=True,
+       fit_intercept=True, lambda_1=1e-06, lambda_2=1e-06, n_iter=100,
+       normalize=True, tol=0.001, verbose=False), 'G': BayesianRidge(alpha_1=1e-06, alpha_2=1e-06, compute_score=False, copy_X=True,
+       fit_intercept=True, lambda_1=1e-06, lambda_2=1e-06, n_iter=100,
+       normalize=True, tol=0.001, verbose=False), 'C': BayesianRidge(alpha_1=1e-06, alpha_2=1e-06, compute_score=False, copy_X=True,
+       fit_intercept=True, lambda_1=1e-06, lambda_2=1e-06, n_iter=100,
+       normalize=True, tol=0.001, verbose=False), 'J': BayesianRidge(alpha_1=1e-06, alpha_2=1e-06, compute_score=False, copy_X=True,
+       fit_intercept=True, lambda_1=1e-06, lambda_2=1e-06, n_iter=100,
+       normalize=True, tol=0.001, verbose=False), 'B': BayesianRidge(alpha_1=1e-06, alpha_2=1e-06, compute_score=False, copy_X=True,
+       fit_intercept=True, lambda_1=1e-06, lambda_2=1e-06, n_iter=100,
+       normalize=True, tol=0.001, verbose=False), 'H': BayesianRidge(alpha_1=1e-06, alpha_2=1e-06, compute_score=False, copy_X=True,
+       fit_intercept=True, lambda_1=1e-06, lambda_2=1e-06, n_iter=100,
+       normalize=True, tol=0.001, verbose=False), 'D': BayesianRidge(alpha_1=1e-06, alpha_2=1e-06, compute_score=False, copy_X=True,
+       fit_intercept=True, lambda_1=1e-06, lambda_2=1e-06, n_iter=100,
+       normalize=True, tol=0.001, verbose=False)}
+A 239
+B 239
+C 245
+172.17.0.1 - - [27/Jan/2019:18:28:17 +0000] "POST /invocations HTTP/1.1" 200 12 "-" "curl/7.63.0"
+A,327,71
+B,100,20
+C,0,1000
+P,100,1000
+Invoked with 4 records
+models:{'A': BayesianRidge(alpha_1=1e-06, alpha_2=1e-06, compute_score=False, copy_X=True,
+       fit_intercept=True, lambda_1=1e-06, lambda_2=1e-06, n_iter=100,
+       normalize=True, tol=0.001, verbose=False), 'I': BayesianRidge(alpha_1=1e-06, alpha_2=1e-06, compute_score=False, copy_X=True,
+       fit_intercept=True, lambda_1=1e-06, lambda_2=1e-06, n_iter=100,
+       normalize=True, tol=0.001, verbose=False), 'F': BayesianRidge(alpha_1=1e-06, alpha_2=1e-06, compute_score=False, copy_X=True,
+       fit_intercept=True, lambda_1=1e-06, lambda_2=1e-06, n_iter=100,
+       normalize=True, tol=0.001, verbose=False), 'E': BayesianRidge(alpha_1=1e-06, alpha_2=1e-06, compute_score=False, copy_X=True,
+       fit_intercept=True, lambda_1=1e-06, lambda_2=1e-06, n_iter=100,
+       normalize=True, tol=0.001, verbose=False), 'G': BayesianRidge(alpha_1=1e-06, alpha_2=1e-06, compute_score=False, copy_X=True,
+       fit_intercept=True, lambda_1=1e-06, lambda_2=1e-06, n_iter=100,
+       normalize=True, tol=0.001, verbose=False), 'C': BayesianRidge(alpha_1=1e-06, alpha_2=1e-06, compute_score=False, copy_X=True,
+       fit_intercept=True, lambda_1=1e-06, lambda_2=1e-06, n_iter=100,
+       normalize=True, tol=0.001, verbose=False), 'J': BayesianRidge(alpha_1=1e-06, alpha_2=1e-06, compute_score=False, copy_X=True,
+       fit_intercept=True, lambda_1=1e-06, lambda_2=1e-06, n_iter=100,
+       normalize=True, tol=0.001, verbose=False), 'B': BayesianRidge(alpha_1=1e-06, alpha_2=1e-06, compute_score=False, copy_X=True,
+       fit_intercept=True, lambda_1=1e-06, lambda_2=1e-06, n_iter=100,
+       normalize=True, tol=0.001, verbose=False), 'H': BayesianRidge(alpha_1=1e-06, alpha_2=1e-06, compute_score=False, copy_X=True,
+       fit_intercept=True, lambda_1=1e-06, lambda_2=1e-06, n_iter=100,
+       normalize=True, tol=0.001, verbose=False), 'D': BayesianRidge(alpha_1=1e-06, alpha_2=1e-06, compute_score=False, copy_X=True,
+       fit_intercept=True, lambda_1=1e-06, lambda_2=1e-06, n_iter=100,
+       normalize=True, tol=0.001, verbose=False)}
+A 239
+B 239
+C 245
+172.17.0.1 - - [27/Jan/2019:18:28:34 +0000] "POST /invocations HTTP/1.1" 500 291 "-" "curl/7.63.0"
+A,327,71
+B,100,20
+C,0,1000
+E,100,1000
+Invoked with 4 records
+models:{'A': BayesianRidge(alpha_1=1e-06, alpha_2=1e-06, compute_score=False, copy_X=True,
+       fit_intercept=True, lambda_1=1e-06, lambda_2=1e-06, n_iter=100,
+       normalize=True, tol=0.001, verbose=False), 'I': BayesianRidge(alpha_1=1e-06, alpha_2=1e-06, compute_score=False, copy_X=True,
+       fit_intercept=True, lambda_1=1e-06, lambda_2=1e-06, n_iter=100,
+       normalize=True, tol=0.001, verbose=False), 'F': BayesianRidge(alpha_1=1e-06, alpha_2=1e-06, compute_score=False, copy_X=True,
+       fit_intercept=True, lambda_1=1e-06, lambda_2=1e-06, n_iter=100,
+       normalize=True, tol=0.001, verbose=False), 'E': BayesianRidge(alpha_1=1e-06, alpha_2=1e-06, compute_score=False, copy_X=True,
+       fit_intercept=True, lambda_1=1e-06, lambda_2=1e-06, n_iter=100,
+       normalize=True, tol=0.001, verbose=False), 'G': BayesianRidge(alpha_1=1e-06, alpha_2=1e-06, compute_score=False, copy_X=True,
+       fit_intercept=True, lambda_1=1e-06, lambda_2=1e-06, n_iter=100,
+       normalize=True, tol=0.001, verbose=False), 'C': BayesianRidge(alpha_1=1e-06, alpha_2=1e-06, compute_score=False, copy_X=True,
+       fit_intercept=True, lambda_1=1e-06, lambda_2=1e-06, n_iter=100,
+       normalize=True, tol=0.001, verbose=False), 'J': BayesianRidge(alpha_1=1e-06, alpha_2=1e-06, compute_score=False, copy_X=True,
+       fit_intercept=True, lambda_1=1e-06, lambda_2=1e-06, n_iter=100,
+       normalize=True, tol=0.001, verbose=False), 'B': BayesianRidge(alpha_1=1e-06, alpha_2=1e-06, compute_score=False, copy_X=True,
+       fit_intercept=True, lambda_1=1e-06, lambda_2=1e-06, n_iter=100,
+       normalize=True, tol=0.001, verbose=False), 'H': BayesianRidge(alpha_1=1e-06, alpha_2=1e-06, compute_score=False, copy_X=True,
+       fit_intercept=True, lambda_1=1e-06, lambda_2=1e-06, n_iter=100,
+       normalize=True, tol=0.001, verbose=False), 'D': BayesianRidge(alpha_1=1e-06, alpha_2=1e-06, compute_score=False, copy_X=True,
+       fit_intercept=True, lambda_1=1e-06, lambda_2=1e-06, n_iter=100,
+       normalize=True, tol=0.001, verbose=False)}
+A 239
+B 239
+C 245
+E 251
+172.17.0.1 - - [27/Jan/2019:18:28:44 +0000] "POST /invocations HTTP/1.1" 200 16 "-" "curl/7.63.0"
